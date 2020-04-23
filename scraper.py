@@ -14,7 +14,7 @@ TODO:
 	- 50 most common words in the entire set of pages
 	- number of subdomains found within ics.uci.edu domain (list = [(URL, number), ...]
 - annoying things to do (have to run crawler and monitor):
-	- detect and avoid inifite traps
+	- detect and avoid infinite traps
 	- detect and avoid sets of similar pages with no information
 	- detect and avoid crawling very large files
 '''
@@ -23,7 +23,7 @@ TODO:
 
 
 import re, nltk
-nltk.download('punkt')
+#nltk.download('punkt')
 from bs4 import BeautifulSoup
 from bs4.element import Comment
 from urllib.parse import urlparse, urldefrag, urljoin
@@ -31,7 +31,6 @@ from urllib.parse import urlparse, urldefrag, urljoin
 
 with open("stopwords.txt", 'r') as stop:
     stopwords = stop.read()
-
 
 
 def scraper(url, resp):
@@ -89,11 +88,35 @@ def extract_next_links(url, resp):
     soup = BeautifulSoup(content, 'html.parser')
     text = parse_text(soup)
     print("TEXT:", text)
+
+    #text files for questions
+    urls(url)
+    numWords(url, text)
+
+
     links = extract_links(url, soup)
     print("NEXT LINKS:", links)
-    return list()
-    # after done debugging, delete return list(), uncomment:
-    #return links
+    #return list()
+    #after done debugging, delete return list(), uncomment:
+    return links
+
+#records urls in text file 
+#number 1 and 4
+def urls(url):
+    file = open("urls.txt", "w")
+    file.write(url + '\n')
+    file.close()
+    return None
+
+#counts the number of words in the file and records it in a text file
+#number 2 and 3
+def numWords(url,text):
+    file = open("words.txt", "w")
+    file.write(url + '\n')
+    file.write(text+ '\n')
+    file.write(len(text)+ '\n')
+    file.close()
+    return None
 
 
 # not done
@@ -125,3 +148,7 @@ def is_valid(url):
     except TypeError:
         print ("TypeError for ", parsed)
         raise
+
+
+
+
