@@ -18,9 +18,8 @@ Done:
 
 
 SET-UP:
-- if restarting launcher, delete files if they exist:   ( rm *.pickle *.json ) 
-	- unique_pages.pickle
-	- longest_page.pickle
+- if restarting launcher, delete files if they exist:   ( rm *.json ) 
+	- unique_pages.json
 	- common_words.json
 	- subdomains.json
 '''
