@@ -51,7 +51,7 @@ if not os.path.isfile("unique_pages.json"):
 
 
 
-# global variables: stopwords, longest_wordcount
+# global variables: stopwords
 with open("stopwords.txt", 'r') as stop:
     stopwords = stop.read()
 
