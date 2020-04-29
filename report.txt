@@ -1,8 +1,30 @@
-The number of unique urls are: 13072
-Url with the most words is: 
+1. The number of unique pages are: 13072
+
+We excluded the following urls from this count:
+  - if "files/pdf/" in url or "/download/" in url:                               
+       # pages did not return textual content
+  - if "wics.ics.uci.edu/events" in url or "/calendar" in url:
+       # calendar = infinite trap
+  - if "archive.ics.uci.edu" in url:
+       # archive.ics.uci.edu - low informational value, 404 statuses"
+  - if "kay" in url and "wordlist.txt" in url:
+       # Professor Kay's wordlist.txt - large file with low informational value"
+  - if "eppstein/pix" in url:
+       # Professor Eppstein's picture pages - low informational value"
+  - if "gallery" in url or ("hack" in parsed.netloc and "img" in url):
+       # Page is mostly image - low informational value
+  - if "evoke.ics.uci.edu/qs-personal-data-landscapes-poster" in url:
+       # evoke landscapes poster - large file with low informational value"
+  - if "grape.ics.uci.edu/wiki/asterix/wiki" in url:
+       # grape.ics.uci.edu asterix wiki page - low informational value"
+  - any url that was infinitely appending
+  - any url that returned content deemed to be near-duplicate to any previous url we found
+
+2. Url with the most words is: 
 	http://www.ics.uci.edu/~shantas/publications/19-privacy_smart_home_codaspy.ppsx
 	with 355783 words
-The 50 most common words are:
+
+3. The 50 most common words are:
 0    research - 24299
 1    computer - 20572
 2    information - 16383
@@ -53,7 +75,8 @@ The 50 most common words are:
 47    past - 6005
 48    change - 5863
 49    work - 5823
-Number of subdomains are: 79
+
+4. Number of subdomains are: 79
     aiclub.ics.uci.edu: 4
     asterix.ics.uci.edu: 31
     betapro.proteomics.ics.uci.edu: 4
@@ -133,4 +156,3 @@ Number of subdomains are: 79
     wics.ics.uci.edu: 8624
     www.ics.uci.edu: 107755
     xtune.ics.uci.edu: 11
-
