@@ -1,0 +1,136 @@
+The number of unique urls are: 13072
+Url with the most words is: 
+	http://www.ics.uci.edu/~shantas/publications/19-privacy_smart_home_codaspy.ppsx
+	with 355783 words
+The 50 most common words are:
+0    research - 24299
+1    computer - 20572
+2    information - 16383
+3    will - 15638
+4    students - 15617
+5    bren - 12946
+6    student - 12923
+7    school - 12890
+8    policies - 12819
+9    news - 12788
+10    software - 12557
+11    data - 12482
+12    uci - 12300
+13    events - 12088
+14    ics - 11865
+15    science - 11407
+16    contact - 9640
+17    graduate - 9147
+18    computing - 9143
+19    project - 9026
+20    ramesh - 8591
+21    one - 8349
+22    irvine - 8341
+23    new - 8179
+24    search - 7980
+25    academic - 7852
+26    time - 7721
+27    may - 7708
+28    faculty - 7626
+29    informatics - 7586
+30    people - 7456
+31    university - 7443
+32    projects - 7324
+33    systems - 7160
+34    donald - 7126
+35    engineering - 6948
+36    also - 6873
+37    courses - 6842
+38    design - 6792
+39    current - 6759
+40    support - 6748
+41    http - 6554
+42    using - 6545
+43    course - 6433
+44    year - 6120
+45    sciences - 6107
+46    undergraduate - 6104
+47    past - 6005
+48    change - 5863
+49    work - 5823
+Number of subdomains are: 79
+    aiclub.ics.uci.edu: 4
+    asterix.ics.uci.edu: 31
+    betapro.proteomics.ics.uci.edu: 4
+    cbcl.ics.uci.edu: 2065
+    cdb.ics.uci.edu: 24
+    cert.ics.uci.edu: 127
+    chenli.ics.uci.edu: 184
+    circadiomics.ics.uci.edu: 52
+    cloudberry.ics.uci.edu: 621
+    cml.ics.uci.edu: 2925
+    computableplant.ics.uci.edu: 166
+    cradl.ics.uci.edu: 197
+    cwicsocal18.ics.uci.edu: 72
+    cyberclub.ics.uci.edu: 86
+    cybert.ics.uci.edu: 80
+    dejavu.ics.uci.edu: 1
+    duttgroup.ics.uci.edu: 1510
+    emj.ics.uci.edu: 865
+    esl.ics.uci.edu: 38
+    evoke.ics.uci.edu: 2654
+    flamingo.ics.uci.edu: 91
+    fr.ics.uci.edu: 22
+    frost.ics.uci.edu: 1
+    futurehealth.ics.uci.edu: 110
+    grape.ics.uci.edu: 17725
+    graphics.ics.uci.edu: 32
+    graphmod.ics.uci.edu: 22
+    hack.ics.uci.edu: 368
+    hai.ics.uci.edu: 26
+    hana.ics.uci.edu: 502
+    hobbes.ics.uci.edu: 113
+    hombao.ics.uci.edu: 91
+    honors.ics.uci.edu: 208
+    iasl.ics.uci.edu: 124
+    industryshowcase.ics.uci.edu: 71
+    ipf.ics.uci.edu: 4
+    ipubmed.ics.uci.edu: 1
+    isg.ics.uci.edu: 2260
+    jgarcia.ics.uci.edu: 106
+    mailman.ics.uci.edu: 123
+    malek.ics.uci.edu: 9
+    mcs.ics.uci.edu: 1217
+    mhcid.ics.uci.edu: 255
+    mlphysics.ics.uci.edu: 7
+    mondego.ics.uci.edu: 25
+    motifmap.ics.uci.edu: 3
+    mse.ics.uci.edu: 40
+    mswe.ics.uci.edu: 328
+    mupro.proteomics.ics.uci.edu: 4
+    nalini.ics.uci.edu: 40
+    ngs.ics.uci.edu: 57906
+    perennialpolycultures.ics.uci.edu: 1
+    plrg.ics.uci.edu: 88
+    psearch.ics.uci.edu: 4
+    radicle.ics.uci.edu: 20
+    redmiles.ics.uci.edu: 75
+    riscit.ics.uci.edu: 21
+    scale.ics.uci.edu: 37
+    scratch.proteomics.ics.uci.edu: 12
+    sdcl.ics.uci.edu: 6471
+    seal.ics.uci.edu: 20
+    selectpro.proteomics.ics.uci.edu: 24
+    sherlock.ics.uci.edu: 68
+    sidepro.proteomics.ics.uci.edu: 2
+    sli.ics.uci.edu: 4730
+    sparcfire.ics.uci.edu: 12
+    sprout.ics.uci.edu: 2
+    statconsulting.ics.uci.edu: 4
+    studentcouncil.ics.uci.edu: 113
+    support.ics.uci.edu: 45
+    tastier.ics.uci.edu: 10
+    testlab.ics.uci.edu: 23
+    tmbpro.ics.uci.edu: 12
+    transformativeplay.ics.uci.edu: 330
+    vision.ics.uci.edu: 3119
+    wearablegames.ics.uci.edu: 60
+    wics.ics.uci.edu: 8624
+    www.ics.uci.edu: 107755
+    xtune.ics.uci.edu: 11
+
