@@ -1,3 +1,4 @@
-# Scraper
+# Web Search Engine Project
 
-used to keep track of scraper.py and all other files used for web crawler
+scraper - code for web crawler
+index - code for simple inverted index
