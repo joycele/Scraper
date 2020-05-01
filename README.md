@@ -1,4 +1,4 @@
 # Web Search Engine Project
 
-scraper - code for web crawler
+scraper - code for web crawler\
 index - code for simple inverted index
