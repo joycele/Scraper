@@ -25,8 +25,8 @@ for f in files:
                         else:
                             answer_dict[url] = answer_dict[url] + d[word][url]
 #print(answer_dict)
-
-print (sorted(answer_dict.items(), key = lambda item: item[1], reverse = True)[:5])
+for result in sorted(answer_dict.items(), key = lambda item: item[1], reverse = True)[:5]:
+    print result
 
 
 
