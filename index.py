@@ -79,11 +79,11 @@ for f in files:
             #if inside one of those 3, add 10 to occurance
             for word in parse_important(soup):
                 #when word not in the dictionary
-                if word not in d.keys():
+                if word not in d:
                     d[word] = dict([(  data['url'], 10)])
                 else:
                     #when word and url in dictionnary
-                    if data['url'] in d[word].keys():
+                    if data['url'] in d[word]:
                         d[word][ data['url']] = d[word][ data['url']] + 10
                     #when word in dictionary but url not in dictionary
                     else:
@@ -92,11 +92,11 @@ for f in files:
             #Do the rest of the text
             for word in parse_text(soup):
                 #when word not in the dictionary
-                if word not in d.keys():
+                if word not in d:
                     d[word] = dict([( data['url'], 1)])
                 else:
                     #when word and url in dictionnary
-                    if data['url'] in d[word].keys():
+                    if data['url'] in d[word]:
                         d[word][ data['url']] = d[word][ data['url']] + 1
                     #when word in dictionary but url not in dictionary
                     else:

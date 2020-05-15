@@ -2,6 +2,9 @@ import glob
 import json
 from collections import defaultdict
 from collections import Counter
+from nltk.stem import PorterStemmer
+
+ps = PorterStemmer()
 
 print("Enter the query you wish to search for")
 x = input()
@@ -18,15 +21,18 @@ for f in files:
             #iterate through word in phrase 
             #e.g [machine, learning]
             for word in phrase.split(" "):
-                if word in d.keys():
-                    for url in d[word].keys():
-                        if url not in answer_dict.keys():
+                print(word)
+                word = ps.stem(word)
+                print(word)
+                if word in d:
+                    for url in d[word]:
+                        if url not in answer_dict:
                             answer_dict[url] = d[word][url]
                         else:
                             answer_dict[url] = answer_dict[url] + d[word][url]
 #print(answer_dict)
 for result in sorted(answer_dict.items(), key = lambda item: item[1], reverse = True)[:5]:
-    print result
+    print (result)
 
 
 
