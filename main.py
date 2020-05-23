@@ -31,16 +31,20 @@ def search_query(event):
                             answer_dict[url] = d[word][url]
                         else:
                             answer_dict[url] = answer_dict[url] + d[word][url]
-    results = sorted(answer_dict.items(), key = lambda item: item[1], reverse = True)
-    ############# END CODE HERE, STORE IN RESUTLS IN VARIABLE 'results' ###############
+    ############################# END SEARCH CODE HERE #############################
     end_time = time.time()
-    canvas.create_text(250, 250, text="Found {} results in {}s".format(len(results), end_time-start_time),
-                       fill='white', tags='result', anchor='w')
-    canvas.create_text(50, 350, text="Displaying top results:", font=("TkTextFont", 13),
-                       fill='white', tags='result', anchor='w')
-    for i in range(min(10, len(results))):   # display at least top 10
-        canvas.create_text(50, 400 + 20 * i, text=results[i], font=("TkTextFont", 10),
+    results = sorted(answer_dict.items(), key = lambda item: item[1], reverse = True)
+    if len(results) == 0:
+        canvas.create_text(75, 325, text="No results found.", font=("TkTextFont", 15),
                            fill='white', tags='result', anchor='w')
+    else:
+        canvas.create_text(250, 250, text="Found {} results in {}s".format(len(results), end_time-start_time),
+                           fill='white', tags='result', anchor='w')
+        canvas.create_text(50, 350, text="Displaying top results:", font=("TkTextFont", 13),
+                           fill='white', tags='result', anchor='w')
+        for i in range(min(10, len(results))):   # display at least top 10
+            canvas.create_text(50, 400 + 20 * i, text=results[i], font=("TkTextFont", 10),
+                               fill='white', tags='result', anchor='w')
         
 
 
