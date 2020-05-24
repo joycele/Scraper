@@ -14,13 +14,14 @@ def numbers_to_strings(num):
 
 if __name__ == "__main__":
     
-    #add words to a dict 
-    #dump if suppposed to go into differnet index
-    #other than that open
-    #open a file and search through 
     for n in range(1,5):
         d = defaultdict() 
         startChar = numbers_to_strings(n)
+        #switch function
+
+        #open the file
+        #add the term frequency if they overlap
+        #split into alphabetical
         for num in range(1,4):
             with open(f"index{num}.json") as f, open("docids.json") as ids:
                 data = json.load(f)
@@ -32,8 +33,9 @@ if __name__ == "__main__":
                         else:
                             d[k].update(data[k]) 
         with(open(f"ordered index {n}.json", 'w')) as i:
-            json.dump(d, i)
+            json.dump(d, i, sort_keys = True)
 
+    #calculate tfidf
     #tf (token count per document (token_count)/(terms)all terms in document)
     #idf log_e(total docs(total_doc), docs with term(docs_with_term))
 
@@ -51,7 +53,7 @@ if __name__ == "__main__":
                     data[token][docid]["tfidf"] = float(tf)/float(idf)
 
             with(open(f"ordered index {n}.json", 'w')) as i:
-                json.dump(data, i)
+                json.dump(data, i, sort_keys = True)
 
 
 
