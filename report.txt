@@ -1,0 +1,31 @@
+M3 Report for Joyce Le (lejy) and Jun Ham (hamj3)
+
+
+
+
+1. UCI instructor
+2. computer science
+3. professor school of the (bad)
+4. in4matx
+5. intelligent robot people
+6. Donald Bren
+7. Christina lopes 
+8. engineering informatics (bad)
+9. information retrieval
+10. Alberto Krone-Martins
+11. algol@uci.edu
+12. Master of software engineering (bad)
+13. Machine learning
+14. Data science (bad)
+15. Clubs at irvine
+16. Cs is fun (bad)
+17. Number 14
+18. Graduate degree
+19. Finals week
+20. School is artificial  (bad)
+
+
+In the test queries listed above, the ones that are marked as “bad” mostly 
+performed poorly because the queries contained words that were commonly 
+within the corpus.  We fixed this by removing such words, such as “is”, “a”, 
+“the”, “of”, out of our cosine similarity calculation.  
