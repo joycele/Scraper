@@ -36,8 +36,9 @@ def search_query(event):
     filtered_docs = []  # list of docs to calculate cosine similarity for
     query = list(filter(ignore_words, tokenizer.tokenize(search.get().lower())))
     print(query)
+    stemmed_query = []
     if len(query) == 0:  # ignored too many words
-            query = tokenizer.tokenize(x.lower())
+        query = tokenizer.tokenize(search.get().lower())
     first = ""
     index = {}  # index loaded in from disk
     start_time = time.time()
